@@ -1,0 +1,33 @@
+#All of the functions for addition, subtraction, multiplication, and division
+def add(x, y):
+  return x + y
+def subtract(x, y):
+  return x - y
+def multiply(x, y):
+  return x * y
+def divide(x, y):
+  return x / y
+#provides instrucrions for the user, and strarting point for the loop
+myVar = 1
+while myVar > 0 :
+  print("1=add")
+  print("2=subtract")
+  print("3=multiply")
+  print("4=divide")
+  #ask the user what opperation they desire
+  user_input = input("choose an opperation (1,2,3, or 4): ")
+  #ask the user what numbers they want to use
+  num1 = float(input("enter first number: "))
+  num2 = float(input("enter second number: "))
+  #function and text for addition
+  if user_input == '1':
+    print(num1, "+", num2, "=", add(num1, num2))
+  #function and text for subtraction
+  if user_input == '2':
+    print(num1, "-", num2, "=", subtract(num1, num2))
+  #function and text for multiplication
+  if user_input == '3':
+    print(num1, "*", num2, "=", multiply(num1, num2))
+  #function and text for division
+  if user_input == '4':
+    print(num1, "/", num2, "=", divide(num1, num2))
